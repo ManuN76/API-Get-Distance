@@ -1,0 +1,31 @@
+{
+  "kind": "column",
+  "name": "Get Distance",
+  "description": "Get Distance",
+  "author": "Manu.n",
+  "params": [
+    {
+      "name": "origin",
+      "displayName": "Origin",
+      "type": "string"
+    },
+    {
+      "name": "destination",
+      "displayName": "Destination",
+      "type": "string"
+    },
+    {
+      "name": "unit",
+      "displayName": "Unit : Imperial (default) or Metric",
+      "type": "string"
+    },
+    {
+      "name": "mode",
+      "displayName": "Driving (default), Bicycling, Walking",
+      "type": "string"
+    }
+  ],
+  "result": {
+    "type": "string"
+  }
+}

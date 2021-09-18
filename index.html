@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Glide Yes-Code</title>
+</head>
+<div>
+  <span id="result"></span>
+</div>
+
+<!-- TODO Insert API KEY -->
+<script src="https://maps.googleapis.com/maps/api/js?key=[YOUR API KEY]&libraries=&v=weekly" async>
+</script>
+
+<script src="function.js"></script>
+<script src="driver.js"></script>
+
+<script>
+  // TEST DEBUG !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  
+  // testDebug();
+
+  //////////////////// No Debug ??????????????
+
+  async function testDebug() {
+  let origin = { type: "string", value: "paris" };
+  let destination = { type: "string", value: "rouen" };
+  let unit = { type: "string", value: "metric" }; //Unit : Imperial (default) or Metric
+  let mode = { type: "string", value: "driving" }; //Driving (default), Bicycling, Walking
+
+  let result = await window.function(origin, destination, unit, mode);
+  document.getElementById("result").innerHTML = result;
+  }
+</script>
+</body>
+
+</html>
